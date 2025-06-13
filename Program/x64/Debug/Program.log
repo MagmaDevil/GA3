@@ -1,5 +1,2 @@
 ﻿  Program.cpp
-C:\Users\Administrator\Desktop\Program\Program.cpp(78,15): error C2440: '=': 'initializer list'에서 'int *'(으)로 변환할 수 없습니다.
-  C:\Users\Administrator\Desktop\Program\Program.cpp(78,15):
-  이니셜라이저에 요소가 너무 많습니다.
-  
+  Program.vcxproj -> C:\Users\Administrator\Desktop\GA3\Program\x64\Debug\Program.exe
