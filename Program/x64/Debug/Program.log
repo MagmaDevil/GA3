@@ -1,2 +1,14 @@
-﻿  Program.cpp
-  Program.vcxproj -> C:\Users\Administrator\Desktop\GA3\Program\x64\Debug\Program.exe
+﻿  Firebat.cpp
+  Ghost.cpp
+  Marine.cpp
+  Program.cpp
+C:\Users\Administrator\Desktop\GA3\Program\Program.cpp(76,13): error C2374: 'pointer': 재정의. 여러 번 초기화했습니다.
+  C:\Users\Administrator\Desktop\GA3\Program\Program.cpp(72,13):
+  'pointer' 선언을 참조하십시오.
+  
+C:\Users\Administrator\Desktop\GA3\Program\Program.cpp(80,13): error C2374: 'pointer': 재정의. 여러 번 초기화했습니다.
+  C:\Users\Administrator\Desktop\GA3\Program\Program.cpp(72,13):
+  'pointer' 선언을 참조하십시오.
+  
+  Terran.cpp
+  코드를 생성하고 있습니다...
