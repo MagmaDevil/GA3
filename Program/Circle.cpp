@@ -1,19 +1,16 @@
 #include "Circle.h"
-#include <iostream>
-
-using namespace std;
 
 Circle::Circle()
 {
-	cout << "Created Circle" << endl << endl;
+	cout << "Created Circle" << endl;
 }
 
-void Circle::Area()
+void Circle::Volume()
 {
-	cout << "Circle Formula" << endl << endl;
+	cout << "¥ð x r©÷\n" << endl;
 }
 
 Circle::~Circle()
 {
-	cout << "Release Circle" << endl << endl;
+	cout << "Release Circle" << endl;
 }

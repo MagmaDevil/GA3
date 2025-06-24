@@ -1,90 +1,86 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int packet = 999;
 
 void Swap(int& referenceX, int& referenceY)
 {
-    int i = referenceX;
-    referenceX = referenceY;
-    referenceY = i;
+	int temporary = referenceX;
+
+	referenceX = referenceY;
+
+	referenceY = temporary;
 }
 
 int main()
 {
-#pragma region ½ºÆ®¸²
+#pragma region ìŠ¤íŠ¸ë¦¼
+	// ì‹œê°„ì˜ íë¦„ì— ë”°ë¼ ì—°ì†ì ìœ¼ë¡œ ë°œìƒí•˜ëŠ” ë°ì´í„°ì˜ íë¦„ì…ë‹ˆë‹¤.
 
-    //½Ã°£ÀÇ Èå¸§¿¡ µû¶ó ¿¬¼ÓÀûÀ¸·Î ¹ß»ıÇÏ´Â µ¥ÀÌÅÍÀÇ Èå¸§
+	//	int count = 0;
+	//	
+	//	std::cout << "Series : ";
+	//	
+	//	std::cin >> count;
+	//	
+	//	for (int i = 0; i < count; i++)
+	//	{
+	//		std::cout << "Play Station " << i + 1 << std::endl;
+	//	}
 
-    //½ºÆ®¸²Àº ¿î¿µ Ã¼Á¦¿¡ ÀÇÇØ »ı¼ºµÇ¸ç, ½ºÆ®¸² ÀÚÃ¼¿¡ ¹öÆÛ¶ó´Â ÀÓ½Ã ¸Ş¸ğ¸® °ø°£ÀÌ Á¸Àç
+	// ìŠ¤íŠ¸ë¦¼ì€ ìš´ì˜ ì²´ì œì— ì˜í•´ ìƒì„±ë˜ë©°, ìŠ¤íŠ¸ë¦¼ ìì²´ì— ë²„í¼ë¼ëŠ”
+	// ì„ì‹œ ë©”ëª¨ë¦¬ ê³µê°„ì´ ì¡´ì¬í•©ë‹ˆë‹¤.
+#pragma endregion
 
-    //std::cout << "League of Legend" << std::endl;
-    //std::cout << "Eternal Return" << std::endl;
+#pragma region ë²”ìœ„ ì§€ì • ì—°ì‚°ì
+	// ì—¬ëŸ¬ ë²”ìœ„ì—ì„œ ì‚¬ìš©ë˜ëŠ” ì‹ë³„ìë¥¼ êµ¬ë¶„í•˜ëŠ” ë°
+	// ì‚¬ìš©í•˜ëŠ” ì—°ì‚°ìì…ë‹ˆë‹¤. 
 
-    //int count;
-    //
-    //std::cout << "Series : ";
-    //std::cin >> count;
-    //
-    //for(int i = 1; i < count + 1; i++)
-    //{
-    //    std::cout << "Play station" << " " << i << std::endl;
-    //}
+	// int packet = 100;
+
+	// std::cout << "packet ì§€ì—­ ë³€ìˆ˜ì˜ ê°’ : " << packet << std::endl;
+	// std::cout << "packet ì „ì—­ ë³€ìˆ˜ì˜ ê°’ : " << ::packet << std::endl;
+
+	// ë²”ìœ„ ì§€ì • ì—°ì‚°ìëŠ” ì „ì—­ ë³€ìˆ˜ì™€ ê°™ì€ ì´ë¦„ì˜ ì§€ì—­ ë³€ìˆ˜ê°€
+	// ì„ ì–¸ë˜ì—ˆì„ ë•Œ ê°€ì¥ ê°€ê¹Œìš´ ë²”ìœ„ì— ì„ ì–¸ëœ ë³€ìˆ˜ì˜ ì´ë¦„ì„
+	// ì‚¬ìš©í•˜ëŠ” ë²”ìœ„ ê·œì¹™ì´ ì¡´ì¬í•˜ê¸° ë•Œë¬¸ì— ì „ì—­ ë³€ìˆ˜ê°€ í˜¸ì¶œë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
+#pragma endregion
+
+#pragma region ì°¸ì¡°ì
+	// í•˜ë‚˜ì˜ ë³€ìˆ˜ì— ë˜ ë‹¤ë¥¸ ì´ë¦„ì„ ì§€ì •í•˜ëŠ” ì§€ì •ìì…ë‹ˆë‹¤.
+
+	// int x = 10;
+	// int y = 20;
+	// 
+	// Swap(x, y);
+	// 
+	// std::cout << "xì˜ ê°’ : " << x << std::endl;
+	// std::cout << "yì˜ ê°’ : " << y << std::endl;
 
 #pragma endregion
 
-#pragma region ¹üÀ§ ÁöÁ¤ ¿¬»êÀÚ
+#pragma region ë™ì  í• ë‹¹
 
-    //¿©·¯ ¹üÀ§¿¡¼­ »ç¿ëµÇ´Â ½Äº°ÀÚ¸¦ ±¸ºĞÇÏ´Âµ¥ »ç¿ëÇÏ´Â ¿¬»êÀÚ
-    //¹üÀ§ ÁöÁ¤ ¿¬»êÀÚ´Â Àü¿ª º¯¼ö¿Í °°Àº ÀÌ¸§ÀÇ Áö¿ª º¯¼ö°¡ ¼±¾ğµÇ¾úÀ»¶§ °¡Àå °¡±î¿î ¹üÀ§¿¡ ¼±¾ğµÈ º¯¼öÀÇ ÀÌ¸§À» »ç¿ëÇÏ´Â ¹üÀ§ ±ÔÄ¢ÀÌ Á¸ÀçÇÏ±â ¶§¹®¿¡ Àü¿ª º¯¼ö°¡ È£ÃâµÇÁö ¾Ê´Â´Ù.
-
-    //int packet = 100;
-    //
-    //std::cout << "packet Áö¿ª º¯¼öÀÇ °ª : " << packet << std::endl;
-    //std::cout << "packet Àü¿ª º¯¼öÀÇ °ª : " << ::packet << std::endl;
-
-#pragma endregion
-
-#pragma region ÂüÁ¶ÀÚ
-
-    //ÇÏ³ªÀÇ º¯¼öÀÇ ¶Ç ´Ù¸¥ ÀÌ¸§À» ÁöÁ¤ÇÏ´Â ÁöÁ¤ÀÚ
-
-    //int x = 10;
-    //int& reference = x;
-    //reference = 99;
-    //std::cout << "xÀÇ °ª : " << x << std::endl;
-    //std::cout << "referenceÀÇ °ª : " << reference << std::endl;
-    //
-    //std::cout << "xÀÇ ÁÖ¼Ò : " << &x << std::endl;
-    //std::cout << "referenceÀÇ ÁÖ¼Ò : " << &reference << std::endl;
-
-    //int x = 1;
-    //int y = 2;
-    //
-    //Swap(x, y);
-    //
-    //std::cout << "xÀÇ °ª : " << x << std::endl;
-    //std::cout << "yÀÇ °ª : " << y << std::endl;
-
-#pragma endregion
-
-#pragma region µ¿Àû ÇÒ´ç
-
-    //int* pointer = new int;
-    //*pointer = 10;
-    //std::cout << "pointerÀÇ ÁÖ¼Ò : " << &pointer << std::endl;
-    //std::cout << "pointerÀÇ °ª : " << *pointer << std::endl;
-    //delete pointer;
-    //pointer = new int[5];
-    //for (int i = 0; i < 5; i++)
-    //{
-    //    pointer[i] = (i + 1) * 10;
-    //    std::cout << "pointer[" << i << "] = " << pointer[i] << std::endl;
-    //}
-    //
-    //delete[] pointer;
+	//	int* pointer = new int;
+	//	
+	//	*pointer = 10;
+	//	
+	//	std::cout << "pointerê°€ ê°€ë¦¬í‚¤ëŠ” ê°’ : " << *pointer << std::endl;
+	//	
+	//	delete pointer;
+	//	
+	//	pointer = new int[5];
+	//	
+	//	for (int i = 0; i < 5; i++)
+	//	{
+	//		pointer[i] = (i + 1) * 10;
+	//	
+	//		std::cout << "Pointer[" << i << "] = " << pointer[i] << std::endl;
+	//	}
+	//	
+	//	delete[] pointer;
 
 #pragma endregion
 
 
-    return 0;
+	return 0;
 }

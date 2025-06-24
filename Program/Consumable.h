@@ -8,9 +8,8 @@ class Consumable
 protected:
 	const char* name;
 
-public:
+public :
 	Consumable();
-
 	~Consumable();
 };
 

@@ -1,20 +1,18 @@
 #include "Firebat.h"
-#include <iostream>
-
-using namespace std;
 
 Firebat::Firebat()
 {
 	health = 50;
-	defense = 15;
+	defense = 1;
 }
 
 void Firebat::Stat()
 {
-	cout << "체력 : " << health << endl;
-	cout << "방어력 : " << defense << endl;
+	cout << "Health : " << health << endl;
+	cout << "Defense : " << defense << "\n" << endl;
 }
 
 Firebat::~Firebat()
 {
+	cout << "Release Firebat" << endl;
 }

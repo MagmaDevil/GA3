@@ -1,20 +1,18 @@
 #include "Ghost.h"
-#include <iostream>
-
-using namespace std;
 
 Ghost::Ghost()
 {
-	health = 1;
+	health = 45;
 	defense = 0;
 }
 
 void Ghost::Stat()
 {
-	cout << "체력 : " << health << endl;
-	cout << "방어력 : " << defense << endl;
+	cout << "Health : " << health << endl;
+	cout << "Defense : " << defense << "\n" << endl;
 }
 
 Ghost::~Ghost()
 {
+	cout << "Release Ghost" << endl;
 }

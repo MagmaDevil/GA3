@@ -1,20 +1,18 @@
 #include "Marine.h"
-#include <iostream>
-
-using namespace std;
 
 Marine::Marine()
 {
-	health = 100;
-	defense = 50;
+	health = 40;
+	defense = 0;
 }
 
 void Marine::Stat()
 {
-	cout << "체력 : " << health << endl;
-	cout << "방어력 : " << defense << endl;
+	cout << "Health : " << health << endl;
+	cout << "Defense : " << defense << "\n" << endl;
 }
 
 Marine::~Marine()
 {
+	cout << "Release Marine" << endl;
 }

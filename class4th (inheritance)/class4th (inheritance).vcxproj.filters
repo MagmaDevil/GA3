@@ -18,18 +18,18 @@
     <ClCompile Include="Source.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\Program\Consumable.cpp">
+    <ClCompile Include="..\Program\Potion.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\Program\Potion.cpp">
+    <ClCompile Include="..\Program\Consumable.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Program\Potion.h">
+    <ClInclude Include="..\Program\Consumable.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\Program\Consumable.h">
+    <ClInclude Include="..\Program\Potion.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

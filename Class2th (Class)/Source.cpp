@@ -1,102 +1,102 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
-namespace Japan
+namespace Germany
 {
-    int area = 377974;
-    void Size()
-    {
-        cout << "area : " << area << "km" << endl;
-    }
+	float area = 45789.2f;
+
+	void Size()
+	{
+		cout << "area : " << area << " km" << endl;
+	}
 }
 
-namespace Korea
+namespace Brazil
 {
-    int area = 100210;
-    void Size()
-    {
-        cout << "area : " << area << "km" << endl;
-    }
+	float area = 57861.5f;
+
+	void Size()
+	{
+		cout << "area : " << area << " km" << endl;
+	}
 }
 
-using namespace Korea;
+using namespace Brazil;
 
 class GameObject
 {
-#pragma region Á¢±Ù ÁöÁ¤ÀÚ
+#pragma region ì ‘ê·¼ ì§€ì •ìž
+	// í´ëž˜ìŠ¤ ë‚´ë¶€ì— í¬í•¨ë˜ì–´ ìžˆëŠ” ì†ì„±ì— ì ‘ê·¼ ë²”ìœ„ë¥¼
+	// ì œí•œí•˜ëŠ” ì§€ì •ìžìž…ë‹ˆë‹¤.
 
-    //Å¬·¡½º ³»ºÎ¿¡ Æ÷ÇÔµÇ¾î ÀÖ´Â ¼Ó¼º¿¡ Á¢±Ù ¹üÀ§¸¦ Á¦ÇÑÇÏ´Â ÁöÁ¤ÀÚ
-    //public: Å¬·¡½º ³»ºÎ¿Í ÀÚ±â°¡ »ó¼ÓÇÏ°í ÀÖ´Â Å¬·¡½º ±×¸®°í Å¬·¡½º ¿ÜºÎ¿¡¼­µµ Á¢±ÙÀ» Çã¿ëÇÏ´Â ÁöÁ¤ÀÚ
+	// public : í´ëž˜ìŠ¤ ë‚´ë¶€ì™€ ìžê¸°ê°€ ìƒì†í•˜ê³  ìžˆëŠ” í´ëž˜ìŠ¤ ê·¸ë¦¬ê³  í´ëž˜ìŠ¤
+	//          ì™¸ë¶€ì—ì„œë„ ì ‘ê·¼ì„ í—ˆìš©í•˜ëŠ” ì§€ì •ìžìž…ë‹ˆë‹¤.
 
-    //protected: Å¬·¡½º ³»ºÎ¿Í ÀÚ±â°¡ »ó¼ÓÇÏ´Â Å¬·¡½º±îÁö¸¸ Á¢±ÙÀ» Çã¿ëÇÏ´Â ÁöÁ¤ÀÚ
+	// protected : í´ëž˜ìŠ¤ ë‚´ë¶€ì™€ ìžê¸°ê°€ ìƒì†í•˜ê³  ìžˆëŠ í´ëž˜ìŠ¤ê¹Œì§€ë§Œ
+	//             ì ‘ê·¼ì„ í—ˆìš©í•˜ëŠ” ì§€ì •ìžìž…ë‹ˆë‹¤.
 
-    //private: Å¬·¡½º ³»ºÎ±îÁö¸¸ Á¢±ÙÀ» Çã¿ëÇÏ´Â ÁöÁ¤ÀÚ
+	// private : í´ëž˜ìŠ¤ ë‚´ë¶€ê¹Œì§€ë§Œ ì ‘ê·¼ì„ í—ˆìš©í•˜ëŠ” ì§€ì •ìžìž…ë‹ˆë‹¤. 
 
 #pragma endregion
 
 private:
-    int x = 1;
-    int y = 2;
-    int z = 3;
+	int x = 1;
+	int y = 2;
+	int z = 3;
 protected:
-    const char* name = "Capsule";
+	const char* name = "Capsule";
 public:
-    void Position()
-    {
-        cout << "x : " << x << endl;
-        cout << "y : " << y << endl;
-        cout << "z : " << z << endl;
-    }
-
+	void Position()
+	{
+		cout << "x : " << x << endl;
+		cout << "y : " << y << endl;
+		cout << "z : " << z << endl;
+	}
 };
 
-void Profile(const char* name = "Ã÷Ä«»ç", int age = 18)
+void Profile(const char* name = "James", int age = 20)
 {
-    cout << "¾Æ¸§Àº : " << name << ", ³ªÀÌ´Â : " << age << endl;
+	cout << "Name : " << name << endl;
+	cout << "Age : " << age << endl;
 }
 
 int main()
 {
+#pragma region ì´ë¦„ ê³µê°„
+	// ì†ì„±ì„ êµ¬ë¶„í•  ìˆ˜ ìžˆë„ë¡ ìœ íš¨ ë²”ìœ„ë¥¼ ì„¤ì •í•˜ëŠ” ì˜ì—­ìž…ë‹ˆë‹¤.
 
-#pragma region ÀÌ¸§ °ø°£
-
-    //¼Ó¼ºÀ» ±¸ºÐÇÒ ¼ö ÀÖµµ·Ï À¯È¿ ¹üÀ§¸¦ ¼³Á¤ÇÏ´Â ¿µ¿ª
-
-    //Japan::Size();
-    //Size();
+	// Size();
+	// Germany::Size();
 
 #pragma endregion
 
-#pragma region Å¬·¡½º
+#pragma region í´ëž˜ìŠ¤
+	// ì‚¬ìš©ìž ì •ì˜ ë°ì´í„° ìœ í˜•ìœ¼ë¡œ ì†ì„±ê³¼ í•¨ìˆ˜ê°€ í¬í•¨ë˜ì–´
+	// ìžˆìœ¼ë©°, í´ëž˜ìŠ¤ë¥¼ í†µí•´ ê°ì²´ë¥¼ ìƒì„±í•˜ì—¬ ì ‘ê·¼í•˜ê³  ì‚¬ìš©
+	// í•˜ëŠ” ì§‘í•©ì²´ìž…ë‹ˆë‹¤.
 
-    //»ç¿ëÀÚ Á¤ÀÇ µ¥ÀÌÅÍ À¯ÇüÀ¸·Î ¼Ó¼º°ú ÇÔ¼ö°¡ Æ÷ÇÔµÇ¾î ÀÖÀ¸¸ç Å¬·¡½º¸¦ ÅëÇì ¦¤º[ »ý¼º, Á¢±Ù, »ç¿ëÇÏ´Â ÁýÇÕÃ¼
-    //Å¬·¡½ºÀÇ °æ¿ì Å¬·¡½º ³»ºÎ¿¡ ÀÖ´Â º¯¼ö´Â Å¬·¡½ºÀÇ ¸Þ¸ð¸® ¿µ¿ª¿¡ Æ÷ÇÔµÇÁö¸¸, Á¤Àû º¯¼ö¿Í ÇÔ¼öÀÇ ¸Þ¸ð¸®´Â Å¬·¡½º ¿µ¿ª¿¡ Æ÷ÇÔµÇÁö ¾Ê´Â´Ù
+	// GameObject gameObject;
+	// 
+	// gameObject.Position();
+	// 
+	// cout << "GameObjectì˜ í¬ê¸° : " << sizeof(GameObject) << endl;
 
-    GameObject GameObject;
-
-    //GameObject.x = 47;
-    //
-    //cout << "GameObjectÀÇ x : " << GameObject.x << endl;
-
-    //GameObject.Position();
-    //
-    //cout << "GameObjectÀÇ Å©±â : " << sizeof(GameObject) << endl;
-
+	// í´ëž˜ìŠ¤ì˜ ê²½ìš° í´ëž˜ìŠ¤ ë‚´ë¶€ì— ìžˆëŠ” ë³€ìˆ˜ëŠ” í´ëž˜ìŠ¤ì˜ 
+	// ë©”ëª¨ë¦¬ ì˜ì—­ì— í¬í•¨ë˜ì§€ë§Œ, ì •ì  ë³€ìˆ˜ì™€ í•¨ìˆ˜ì˜ ë©”ëª¨ë¦¬ëŠ”
+	// í´ëž˜ìŠ¤ ì˜ì—­ì— í¬í•¨ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
 #pragma endregion
 
-#pragma region ±âº» ¸Å°³ º¯¼ö
+#pragma region ê¸°ë³¸ ë§¤ê°œ ë³€ìˆ˜
+	// í•¨ìˆ˜ì˜ ë§¤ê°œ ë³€ìˆ˜ì— ê°’ì´ ì „ë‹¬ë˜ì§€ ì•Šì„ ë•Œ
+	// ë¯¸ë¦¬ ê°’ì„ ì„¤ì •í•´ë†“ëŠ” ë§¤ê°œ ë³€ìˆ˜ìž…ë‹ˆë‹¤.
 
-    //ÇÔ¼öÀÇ ¸Å°³ º¯¼ö¾Ö °ªÀÌ Àü´ÞµÇÁö¾ÊÀ»¶§ ¹Ì¸® °ªÀ» ¼³Á¤ÇØ³õ´Â ¸Å°³ º¯¼ö
+	// Profile();	
+	// Profile("Jones", 25);
 
-    //Profile();
-    //Profile("Ä«³ªµ¥", 18);
-    //Profile();
-    //Profile("³×³×", 17);
-
+	// ê¸°ë³¸ ë§¤ê°œ ë³€ìˆ˜ë¥¼ ì§€ì •í•˜ë ¤ë©´ ì˜¤ë¥¸ìª½ì—ì„œ ë¶€í„°
+	// ê°’ì„ ì§€ì •í•´ì£¼ì–´ì•¼ í•©ë‹ˆë‹¤.
 #pragma endregion
 
-
-
-    return 0;
+	return 0;
 }

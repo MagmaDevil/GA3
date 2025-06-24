@@ -8,7 +8,7 @@ class Shape
 public:
 	Shape();
 
-	void Area();
+	void Volume();
 
 	~Shape();
 };

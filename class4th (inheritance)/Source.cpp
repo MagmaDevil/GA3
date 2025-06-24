@@ -1,21 +1,25 @@
 ﻿#include <iostream>
 #include "../Program/Potion.h"
+
 using namespace std;
-
-
 
 int main()
 {
 #pragma region 상속
+	// 상위 클래스의 속성을 하위 클래스가 사용할 수 있도록 
+	// 설정해주는 기능입니다.
 
-    //상위 클래스의 속성을 하위 클래스가 사용할수있도록 설정하는 기능
+	Consumable consumable;
 
-    //클래스의 상속관계에서 상위는 하위의 속성을 사용 못 하며 하위는 상위의 메모리가 포함된 상태로 메모리의 크기가 결정된다
+	Potion potion;
 
-    Consumable consumable;
-    Potion potion;
+	cout << "Consumable의 크기 : " << sizeof(Consumable) << endl;
+	cout << "Potion의 크기 : " << sizeof(Potion) << endl;
 
+	// 클래스의 상속 관계에서 상위 클래스는 하위 클래스의 속성을
+	// 사용할 수 없으며, 하위 클래스는 상위 클래스의 메모리가 포함된
+	// 상태로 메모리의 크기가 결정됩니다.
 #pragma endregion
 
-    return 0;
+	return 0;
 }

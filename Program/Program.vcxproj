@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{511289c0-352b-4a2d-ba59-64236fe45188}</ProjectGuid>
+    <ProjectGuid>{bbea896f-243c-4dbc-88b2-f3b582d8d761}</ProjectGuid>
     <RootNamespace>Program</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,21 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="Firebat.cpp" />
-    <ClCompile Include="Ghost.cpp" />
-    <ClCompile Include="Marine.cpp" />
     <ClCompile Include="Program.cpp" />
-    <ClCompile Include="Shape.cpp" />
-    <ClCompile Include="Terran.cpp" />
+    <ClCompile Include="Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Circle.h" />
-    <ClInclude Include="Firebat.h" />
-    <ClInclude Include="Ghost.h" />
-    <ClInclude Include="Marine.h" />
-    <ClInclude Include="Shape.h" />
-    <ClInclude Include="Terran.h" />
+    <ClInclude Include="Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
