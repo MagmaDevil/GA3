@@ -1,25 +1,83 @@
 ﻿#include <iostream>
-#include "Vector2.h"
+
 using namespace std;
+	
+template <typename T>
+bool same(T left, T right)
+{
+	return left == right;
+	//return (bool)(left == right);
+}
+
+template <>
+bool same(const char * left, const char * right)
+{
+	return strlen(left) == strlen(right);
+}
+
+template <typename T>
+	class Container
+	{
+	private:
+		T list[5];
+		int index;
+	public:
+		Container()
+		{
+			index = 0;
+
+				for (int i = 0; i < 5; i++)
+				{
+					list[i] = NULL;
+				}
+		}
+		void Push(T value)
+		{
+			list[index++] = value;
+		}
+	};
 
 int main()
 {
-#pragma region 캡슐화
 
-	//객체의 상태와 그 상태를 조작하는 기능을 하나로 합친 다음 객체 외부에서 직접 접근하지 못하도록 제한하는 기능
+#pragma region 템플릿
+
+	// 데이터 형식에 의존하지 않고 하나의 값이 여러 다른 데이터 형식을 가질 수 있는 기술에 중점을 두어 재사용성을 높일 수 있는 기능
+
+	//same("A", "A");		//(char, char)
+	//cout << same("A", "A") << endl;
+	//
+	//same(10, 2);         //(int, int)
+	//cout << same(10, 2) << endl;
+	//
+	//same(5.75f, 1.25f);	//(float, float)
+	//cout << same(5.75f, 1.25f) << endl;
+	//
+	//same(1.5, 3.8);	//(float, float)
+	//cout << same(1.5, 3.8) << endl;
+
+
 
 #pragma endregion
 
-	Vector2 vector1;
-	Vector2 vector2;
+#pragma region 템플릿 특수화
 
-	vector1.Coodinate(1, 1);
-	vector2.Coodinate(2, 3);
+	//특정한 자료형에 대해 다르게 처리하고 싶은 경우 특정한 자료형만 다른 형식으로 동작시키는 기능
 
-	Vector2 direction = vector1 + vector2;
+		//same("ACE", "HOME");
+		//cout << same("ACE", "HOME") << endl;
+		//
+		//same("ACE", "LOL");
+		//cout << same("ACE", "LOL") << endl;
 
-	cout << "direction.x: " << direction.X() << endl;
-	cout << "direction.y: " << direction.Y() << endl;
+#pragma endregion
+
+#pragma region 클래스 템플릿
+
+	Container<int> Container;
+
+#pragma endregion
+
 
 	return 0;
 }

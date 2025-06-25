@@ -75,22 +75,34 @@ const Vector2 & Vector2::operator%(const Vector2 & vector2)
 
 const Vector2 & Vector2::operator++()
 {
-	// TODO: 여기에 return 문을 삽입합니다.
+	this->x++;
+	this->y++;
+	return *this;
 }
 
 const Vector2& Vector2::operator--()
 {
-	// TODO: 여기에 return 문을 삽입합니다.
+	this->x++;
+	this->y++;
+	return *this;
 }
 
 const Vector2 & Vector2::operator++(int)
 {
-	// TODO: 여기에 return 문을 삽입합니다.
+	Vector2 clone;
+	clone.Coodinate(x, y);
+	this->x++;
+	this->y++;
+	return clone;
 }
 
 const Vector2 & Vector2::operator--(int)
 {
-	// TODO: 여기에 return 문을 삽입합니다.
+	Vector2 clone;
+	clone.Coodinate(x, y);
+	this->x--;
+	this->y--;
+	return clone;
 }
 
 Vector2::~Vector2()
