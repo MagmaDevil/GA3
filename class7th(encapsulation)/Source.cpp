@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include "../class7th(encapsulation)/Vector2.h"
+#include "../Class7th(encapsulation)/Vector2.h"
 using namespace std;
 
 int main()
