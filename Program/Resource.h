@@ -7,7 +7,6 @@ class Resource
 {
 private:
 	shared_ptr<Resource> sharedpointer;
-	;
 
 public:
 	Resource();
