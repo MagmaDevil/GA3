@@ -1,87 +1,55 @@
 ﻿#include <iostream>
-#include <vector>
-#include <list>
+#include <stack>
+#include <queue>
+
 using namespace std;
 
 int main()
 {
-#pragma region 선형 컨테이너
 
-	// 데이터를 선형으로 저장, 특별한 제약이나 규칙이 없다
+#pragma region 컨테이너 어댑터
 
-#pragma region vector container
+	//기존 컨테이너의 인터페이스를 제한하여 만든 기능이 제한되거나 변경된 컨테이너
 
-	//vector<int> vector;
+#pragma region stack container
+
+	//stack<int> stack;
 	//
-	//vector.reserve(10);
+	//stack.push(10);
+	//stack.push(20);
+	//stack.push(30);
+	//stack.push(40);
+	//stack.push(50);
 	//
-	//vector.push_back(10);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.push_back(20);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.push_back(30);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.push_back(40);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.push_back(50);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.push_back(60);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.push_back(70);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.push_back(80);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.push_back(90);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.push_back(100);
-	//
-	//cout << "size: " << vector.size() << endl;
-	//cout << "capacity: " << vector.capacity() << endl;
-	//
-	//vector.pop_back();
-	//
-	//for (int i = 0; i < vector.size(); i++)
+	//while(stack.empty() == false)
 	//{
-	//	cout << "vector: " << vector[i] << endl;
+	//	cout << stack.top() << endl;
+	//	stack.pop();
 	//}
-	
-#pragma endregion
-
-#pragma region list container
-
-	
 
 #pragma endregion
 
+#pragma region queue container
+
+	//queue<int> queue;
+	//
+	//queue.push(10);
+	//queue.push(20);
+	//queue.push(30);
+	//queue.push(40);
+	//queue.push(50);
+	//
+	//while(queue.empty() == false)
+	//{
+	//	cout << queue.front() << " ";
+	//
+	//	queue.pop();
+	//}
 
 #pragma endregion
+
+#pragma endregion
+
 
 	return 0;
 }
