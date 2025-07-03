@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class10th(thread)", "..\Cla
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class11th(linear container)", "..\Class11th(linear container)\Class11th(linear container).vcxproj", "{D3A101D6-86D2-463A-B0C3-C77270D48E2D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class12th(container adapter)", "..\Class12th(container adapter)\Class12th(container adapter).vcxproj", "{E71A000B-3395-44AE-AD35-377A49A8F352}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{D3A101D6-86D2-463A-B0C3-C77270D48E2D}.Release|x64.Build.0 = Release|x64
 		{D3A101D6-86D2-463A-B0C3-C77270D48E2D}.Release|x86.ActiveCfg = Release|Win32
 		{D3A101D6-86D2-463A-B0C3-C77270D48E2D}.Release|x86.Build.0 = Release|Win32
+		{E71A000B-3395-44AE-AD35-377A49A8F352}.Debug|x64.ActiveCfg = Debug|x64
+		{E71A000B-3395-44AE-AD35-377A49A8F352}.Debug|x64.Build.0 = Debug|x64
+		{E71A000B-3395-44AE-AD35-377A49A8F352}.Debug|x86.ActiveCfg = Debug|Win32
+		{E71A000B-3395-44AE-AD35-377A49A8F352}.Debug|x86.Build.0 = Debug|Win32
+		{E71A000B-3395-44AE-AD35-377A49A8F352}.Release|x64.ActiveCfg = Release|x64
+		{E71A000B-3395-44AE-AD35-377A49A8F352}.Release|x64.Build.0 = Release|x64
+		{E71A000B-3395-44AE-AD35-377A49A8F352}.Release|x86.ActiveCfg = Release|Win32
+		{E71A000B-3395-44AE-AD35-377A49A8F352}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
